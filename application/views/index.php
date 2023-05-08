@@ -6,7 +6,8 @@
     <title>Ai~Project Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="description" content="C'est une site d'information concernant les intelligences artificielles">
+
 
     <!-- Favicon -->
     <link href="<?php echo base_url('assets/img/favicon.ico') ?>" rel="icon">
