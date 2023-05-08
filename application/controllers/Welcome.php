@@ -26,19 +26,19 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		//categorie
-		$url = 'http://localhost/AI_BO_Project/IA-Categorie';
+		$url = 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/IA-Categorie';
 
 		$response = file_get_contents($url);
 	
 		$data['categorie'] = json_decode($response, true);
 
 		//actualite
-		$actualite_url='http://localhost/AI_BO_Project/IA-Actualite';
+		$actualite_url='https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/IA-Actualite';
 		$response1 = file_get_contents($actualite_url);
 		$data['actualite']= json_decode($response1, true);
 
 		//evenement
-		$event_url='http://localhost/AI_BO_Project/IA-Evenement';
+		$event_url='https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/IA-Evenement';
 		$response2 = file_get_contents($event_url);
 		$data['event']= json_decode($response2, true);
 
@@ -46,7 +46,7 @@ class Welcome extends CI_Controller {
 	}
 	public function detail($titre,$id)
 	{
-		$url = 'http://localhost/AI_BO_Project/Actualites-Front/'.$titre.'/'.$id.'';
+		$url = 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/Actualites-Front/'.$titre.'/'.$id.'';
 
 		$response = file_get_contents($url);
 	

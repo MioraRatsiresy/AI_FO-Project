@@ -163,7 +163,7 @@
                     <a href="<?php echo base_url('AI-Actualites/'.$actualite['grandtitre'].'/'.$actualite['idactualite'].'');?>"><div class="team-item bg-light">
                             <div class="overflow-hidden">
                                 <img class="img-fluid"
-                                    src="<?php echo 'http://localhost/AI_BO_Project/assets/img/upload/' . $actualite['photoillustration'] ?>"
+                                    src="<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $actualite['photoillustration'] ?>"
                                     alt="<?php echo $actualite['grandtitre']; ?>">
                             </div>
                             <div class="text-center p-4">
@@ -196,7 +196,7 @@
                     <a href="<?php echo base_url('AI-Actualites/'.$event['grandtitre'].'/'.$event['idactualite'].'');?>"><div class="team-item bg-light">
                             <div class="overflow-hidden">
                                 <img class="img-fluid"
-                                    src="<?php echo 'http://localhost/AI_BO_Project/assets/img/upload/' . $event['photoillustration'] ?>"
+                                    src="<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $event['photoillustration'] ?>"
                                     alt="<?php echo $event['grandtitre']; ?>">
                             </div>
                             <div class="text-center p-4">

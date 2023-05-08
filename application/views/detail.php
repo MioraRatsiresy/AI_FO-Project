@@ -69,7 +69,7 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 " style="background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(<?php echo 'http://localhost/AI_BO_Project/assets/img/upload/'.$photoillustration?>);
+    <div class="container-fluid bg-primary py-5 mb-5 " style="background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/'.$photoillustration?>);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;">
@@ -85,7 +85,7 @@
 
 
     <div class="container-fluid px-2 px-md-4">
-      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('<?php echo 'http://localhost/AI_BO_Project/assets/img/upload/'.$photoillustration?>');">
+      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/'.$photoillustration?>');">
         <span class="mask  bg-gradient-primary  opacity-6"></span>
       </div>
       <div class="card card-body mx-3 mx-md-4 mt-n6">
