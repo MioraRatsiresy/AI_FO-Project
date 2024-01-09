@@ -47,7 +47,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="<?php echo base_url('Home')?>" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="<?php echo base_url('Home') ?>" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Ai~project</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -134,7 +134,7 @@
 
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                         <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="<?php echo $categorie['imagecategorie'];?>" alt="">
+                            <img class="img-fluid" src="<?php echo $categorie['imagecategorie']; ?>" alt="">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                 style="margin: 1px;">
                                 <h5 class="m-0">
@@ -152,7 +152,7 @@
 
 
     <!-- Actualite Start -->
-     <div class="container-xxl py-5" name="afficher-news">
+    <div class="container-xxl py-5" name="afficher-news">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Actualites</h6>
@@ -161,21 +161,24 @@
             <div class="row g-4">
                 <?php foreach ($actualite as $actualite) { ?>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="<?php echo base_url('AI-Actualites/'.$actualite['grandtitre'].'/'.$actualite['idactualite'].'');?>"><div class="team-item bg-light">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid"
-                                    src="<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $actualite['photoillustration'] ?>"
-                                    alt="<?php echo $actualite['grandtitre']; ?>">
+                        <a
+                            href="<?php echo base_url('AI-Actualites/' . $actualite['grandtitre'] . '/' . $actualite['idactualite'] . ''); ?>">
+                            <div class="team-item bg-light">
+                                <div class="overflow-hidden">
+                                    <img class="img-fluid"
+                                        src="<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $actualite['photoillustration'] ?>"
+                                        alt="<?php echo $actualite['grandtitre']; ?>">
+                                </div>
+                                <div class="text-center p-4">
+                                    <h5 class="mb-0">
+                                        <?php echo $actualite['grandtitre']; ?>
+                                    </h5>
+                                    <small>
+                                        <?php echo $actualite['datepublication']; ?>
+                                    </small>
+                                </div>
                             </div>
-                            <div class="text-center p-4">
-                                <h5 class="mb-0">
-                                    <?php echo $actualite['grandtitre']; ?>
-                                </h5>
-                                <small>
-                                    <?php echo $actualite['datepublication']; ?>
-                                </small>
-                            </div>
-                        </div></a>
+                        </a>
                     </div>
                 <?php } ?>
             </div>
@@ -194,21 +197,24 @@
             <div class="row g-4">
                 <?php foreach ($event as $event) { ?>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="<?php echo base_url('AI-Actualites/'.$event['grandtitre'].'/'.$event['idactualite'].'');?>"><div class="team-item bg-light">
-                            <div class="overflow-hidden">
-                                <img class="img-fluid"
-                                    src="<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $event['photoillustration'] ?>"
-                                    alt="<?php echo $event['grandtitre']; ?>">
+                        <a
+                            href="<?php echo base_url('AI-Actualites/' . $event['grandtitre'] . '/' . $event['idactualite'] . ''); ?>">
+                            <div class="team-item bg-light">
+                                <div class="overflow-hidden">
+                                    <img class="img-fluid"
+                                        src="<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $event['photoillustration'] ?>"
+                                        alt="<?php echo $event['grandtitre']; ?>">
+                                </div>
+                                <div class="text-center p-4">
+                                    <h5 class="mb-0">
+                                        <?php echo $event['grandtitre']; ?>
+                                    </h5>
+                                    <small>
+                                        <?php echo $event['datepublication']; ?>
+                                    </small>
+                                </div>
                             </div>
-                            <div class="text-center p-4">
-                                <h5 class="mb-0">
-                                    <?php echo $event['grandtitre']; ?>
-                                </h5>
-                                <small>
-                                    <?php echo $event['datepublication']; ?>
-                                </small>
-                            </div>
-                        </div></a>
+                        </a>
                     </div>
                 <?php } ?>
             </div>
@@ -321,6 +327,14 @@
     <script src="<?php echo base_url('assets/lib/waypoints/waypoints.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/lib/owlcarousel/owl.carousel.min.js') ?>"></script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN9JLVM1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-99XN9JLVM1');
+    </script>
     <!-- Template Javascript -->
     <script src="<?php echo base_url('assets/js/main.js') ?>"></script>
 </body>

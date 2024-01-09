@@ -9,7 +9,7 @@
     </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta name="description" content="Détails sur l'actualité: <?php echo $grandtitre;?>">
+    <meta name="description" content="Détails sur l'actualité: <?php echo $grandtitre; ?>">
     <!-- Favicon -->
     <link href="<?php echo base_url('assets/img/favicon.ico') ?>" rel="icon">
 
@@ -48,7 +48,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="<?php echo base_url('Home')?>" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="<?php echo base_url('Home') ?>" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Ai~project</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -56,11 +56,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="<?php echo base_url('Home')?>" class="nav-item nav-link active">Home</a>
-                <a href="<?php echo base_url('Home')?>" onclick="scrollToPartie('afficher-about')" class="nav-item nav-link">About</a>
-                <a href="<?php echo base_url('Home')?>" onclick="scrollToPartie('afficher-news')" class="nav-item nav-link">News</a>
-                <a href="<?php echo base_url('Home')?>" onclick="scrollToPartie('afficher-event')" class="nav-item nav-link">Event</a>
-                <a href="<?php echo base_url('Home')?>" onclick="scrollToPartie('afficher-contact')" class="nav-item nav-link">Contact</a>
+                <a href="<?php echo base_url('Home') ?>" class="nav-item nav-link active">Home</a>
+                <a href="<?php echo base_url('Home') ?>" onclick="scrollToPartie('afficher-about')"
+                    class="nav-item nav-link">About</a>
+                <a href="<?php echo base_url('Home') ?>" onclick="scrollToPartie('afficher-news')"
+                    class="nav-item nav-link">News</a>
+                <a href="<?php echo base_url('Home') ?>" onclick="scrollToPartie('afficher-event')"
+                    class="nav-item nav-link">Event</a>
+                <a href="<?php echo base_url('Home') ?>" onclick="scrollToPartie('afficher-contact')"
+                    class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -68,14 +72,16 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 " style="background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/'.$photoillustration?>);
+    <div class="container-fluid bg-primary py-5 mb-5 " style="background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $photoillustration ?>);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown"><?php echo $grandtitre;?></h1>
+                    <h1 class="display-3 text-white animated slideInDown">
+                        <?php echo $grandtitre; ?>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -84,17 +90,18 @@
 
 
     <div class="container-fluid px-2 px-md-4">
-      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/'.$photoillustration?>');">
-        <span class="mask  bg-gradient-primary  opacity-6"></span>
-      </div>
-      <div class="card card-body mx-3 mx-md-4 mt-n6">
-        <div class="row">
-          <div>
-          <?php echo $descriptionactualite;?>
-          </div>
-
+        <div class="page-header min-height-300 border-radius-xl mt-4"
+            style="background-image: url('<?php echo 'https://intelligenceartificielle.alwaysdata.net/AI_BO_Project/assets/img/upload/' . $photoillustration ?>');">
+            <span class="mask  bg-gradient-primary  opacity-6"></span>
         </div>
-      </div>
+        <div class="card card-body mx-3 mx-md-4 mt-n6">
+            <div class="row">
+                <div>
+                    <?php echo $descriptionactualite; ?>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <!-- Footer Start -->
@@ -181,7 +188,14 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN9JLVM1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-99XN9JLVM1');
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
